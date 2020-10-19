@@ -14,7 +14,7 @@ Netherlands. I'm currently a third-year student.
 I like to create games, websites, software, and apps.  
 
 To see the projects I've worked on, or if you want to see my previous experience, navigate to the "Projects"
-or "Experience" sections of this website.
+or "CV/Resume" sections of this website.
 
 I have experience with the following languages:
 * C#,
