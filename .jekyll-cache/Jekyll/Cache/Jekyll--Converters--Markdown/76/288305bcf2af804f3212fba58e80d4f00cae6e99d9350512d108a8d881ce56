@@ -1,0 +1,9 @@
+I"Z<ul>
+  <li>Melee-based roguelike dungeon crawler videogame. Focus on game feel and (semi-)procedural generation.</li>
+  <li>Designed gameplay mechanics surrounding combat</li>
+  <li>Implemented Entity component system,</li>
+  <li>implemented (recursive) state machines &amp; states,</li>
+  <li>implemented UI and connection with data</li>
+</ul>
+
+:ET
