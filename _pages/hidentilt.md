@@ -6,7 +6,7 @@ permalink: /hidentilt/
 <h1 class="row justify-content-center"> [Videogame prototype] Hide 'n Tilt Labyrinth</h1>
 
 <div class="row justify-content-center">
-  <img src="/assets/images/hidentilt/hidentiltbanner.png">
+  <img src="/assets/Images/hidentilt/hidentiltbanner.png">
 </div>
 
 

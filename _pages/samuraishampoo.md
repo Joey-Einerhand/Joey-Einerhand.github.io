@@ -8,7 +8,7 @@ permalink: /samuraishampoo/
 <br>
 
 <div class="row justify-content-center">
-  <img src="/assets/images/SamuraiShampoo/SaShGif.gif">
+  <img src="/assets/Images/SamuraiShampoo/SaShGif.gif">
 </div>
 <br>
 <div class="row justify-content-center">
