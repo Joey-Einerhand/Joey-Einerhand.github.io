@@ -1,7 +1,7 @@
 title: Joey Portfolio
 description: Joey Einerhand's Software Engineering Portfolio website
 
-baseurl: /portfolio
+baseurl: 
 color-scheme: #00aa55
 
 sass:
