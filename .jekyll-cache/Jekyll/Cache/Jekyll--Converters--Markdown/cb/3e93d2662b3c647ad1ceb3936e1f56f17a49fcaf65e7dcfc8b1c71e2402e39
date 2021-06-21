@@ -1,6 +1,0 @@
-I"F<ul>
-  <li>Reads and processes text-communication in the videogame Team Fortress 2 in real time.</li>
-  <li>Converts the read text to speech and tunnels the speech to an audio source which has been chosen by the application user. This results in being able to read the text-communication out loud in Team Fortress 2’s voice-communication system.</li>
-  <li>Filters and changes the text to speech output based on keywords and commands read from the text-communication channels, allowing Team Fortress 2 players to change the voice and rate of the text being read aloud.</li>
-</ul>
-:ET

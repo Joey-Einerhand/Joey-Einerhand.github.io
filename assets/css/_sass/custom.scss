@@ -1,0 +1,50 @@
+/* Add your custom styles here */
+// .btn-primary{
+//     background-color: #1d4367;
+//     border-color: #1d4367;
+//     color: #ffc00f;
+//     &:hover{
+//         background-color: #ffc00f;
+//         border-color: #ffc00f;
+//         color: #1d4367;
+//     }
+// }
+// .bg-primary{
+//     background-color: #1d4367 !important
+// }
+
+body {
+    background-color: #2b2b2b
+}
+
+.bg-primary {
+    background-color: #202020
+}
+
+.navbar {
+    background-color: #242424 !important
+}
+
+footer {
+    background-color: #242424 !important
+}
+
+p, h1, h2, h3, h4, h5, h6, strong, address, ul, li {
+    color: #FFF;
+}
+
+a {
+    color: #FB5E5E;
+}
+
+.card {
+    background-color: #202020;
+}
+
+.card-footer {
+    background-color: #131313;
+}
+
+.btn {
+    background-color: #FB5E5E;
+}
