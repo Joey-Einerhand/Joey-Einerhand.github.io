@@ -15,6 +15,11 @@ permalink: /TF2CTS/
 
 <br>
 
+<div class = "row justify-content-center">
+  <img src="/assets/Images/TF2CTS/UML.png" class="col-lg-10 rounded justify-content-center">
+</div>
+
+<br>
 <p>
   TF2 Chat To Speech is a .NET framework application which reads the in-game text chat of a game called Team Fortress 2 and outputs it into the in-game voice chat. TF2CTS supports commands which users can write in-game in order for them to switch the speaker's voice and rate of speech.
 </p>
