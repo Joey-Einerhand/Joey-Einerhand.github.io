@@ -1,0 +1,15 @@
+title: Joey Portfolio
+description: Joey Einerhand's Software Engineering Portfolio website
+
+baseurl: 
+color-scheme: #00aa55
+
+sass:
+  sass_dir: /assets/css/_sass
+  style: compressed
+
+include:
+  - _pages
+
+exclude:
+  - .sass-cache
