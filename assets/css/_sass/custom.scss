@@ -31,10 +31,37 @@ footer {
 
 p, h1, h2, h3, h4, h5, h6, strong, address, ul, li {
     color: #FFF;
+    margin-bottom: 0
 }
 
 a {
     color: #FB5E5E;
+    display: block;
+    padding: 5px; // Reduced padding for a more classic look
+    margin-bottom: 5px; // Reduced margin for efficiency
+    text-decoration: none;
+    border-radius: 2px; // Reduced border radius for a more classic look
+    background-color: #242424; // Kept the same background color for simplicity
+    color: #FFF;
+    transition: all 0.3s ease; // Added transition for smooth hover effect
+
+    &:hover {
+        background-color: #FB5E5E; // Changed background color on hover
+        color: #242424; // Changed text color on hover
+    }
+}
+
+.social_media_links .text-center a {
+    // None of the A properties
+    display: inline-block;
+    margin: 0 10px;
+    color: #FFF;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    &:hover {
+        transform: scale(1.2); // Added scale effect on hover
+    }
 }
 
 .card {
