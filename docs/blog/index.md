@@ -1,0 +1,6 @@
+---
+title: blogtitle
+---
+
+# Blog
+

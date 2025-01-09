@@ -1,0 +1,170 @@
+<!--
+  Copyright (c) 2016-2025 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+{% extends "base.html" %}
+
+{# Changes from original template:  #}
+{# Homepage now displays all posts  #}
+{# in /docs/assets/projects/*.md    #}
+{# As neat thumbnails.              #}
+
+{% block content %}
+    {{ super() }}
+
+    {# Make sure it only runs on the home page #}
+
+    {% if page.url == '' %}
+        <div class="row d-flex justify-content-center">
+
+            {#  
+                Loop through all pages and display them if they're projects.
+                I differentiate between new and old projects, old projects get
+                walled off in a seperate section at the bottom of the page.
+                New/old set in fontmatter
+            #}
+
+            {% set project_files_new_prioritized = [] %}
+            {% set project_files_new_unprioritized = [] %}
+            {% set project_files_old_prioritized = [] %}
+            {% set project_files_old_unprioritized = [] %}
+
+            {% for loop_file in pages %}
+                {% if loop_file.url.startswith('projects/') %}
+                
+                    {# 
+                        Appending goes between {{ }} because we're missing a module, so we can't
+                        use the `do` operator from Jina2. 
+                        The '| default("", true)' prevents the {{}} from printing "none" to the page
+                        https://stackoverflow.com/questions/49619445/how-to-append-to-a-list-in-jinja2-for-ansible
+                    #}
+
+                    {# Sort through all projects. If a project has a display priority,
+                        it should be displayed before display priorities of a lower value
+                        e.g. D-P 1 should be shown before D-P 2 on the front page.
+                        Does allow for multiple of the same D-P.
+                        Projects without D-P get appended at the end.
+                        
+                    #}
+                    {% if loop_file.page.meta.is_old_project %}
+
+                        {% if loop_file.page.meta.display_priority %}
+                            {{ project_files_old_prioritized.append(loop_file) | default("", true)}}
+                        {% else %}
+                            {{ project_files_old_unprioritized.append(loop_file) | default("", true)  }}
+                        {% endif %}
+
+                    {% else %}
+                        {% if loop_file.page.meta.display_priority %}
+                            {{ project_files_new_prioritized.append(loop_file) | default("", true)}}
+                        {% else %}
+                            {{ project_files_new_unprioritized.append(loop_file) | default("", true)}}
+                        {% endif %}
+
+                    {% endif %}
+
+                {% endif %}
+            {% endfor %}
+
+
+            {# Sort the list with projects with a priority by priority, 
+                Sort the unprioritzed list by name,
+                combine the lists for a total list of all projects so we can render them.
+            #}
+
+            {% set project_files_new_sorted = [] %}
+            {% for project_file_new_prioritized in project_files_new_prioritized|sort(attribute="page.meta.display_priority") %}
+                {{ project_files_new_sorted.append(project_file_new_prioritized) | default("", true) }}
+            {% endfor %}
+            {% for project_file_new_unprioritized in project_files_new_unprioritized|sort(attribute="page.meta.title") %}
+                {{ project_files_new_sorted.append(project_file_new_unprioritized) | default("", true) }}
+            {% endfor %}
+
+            {% set project_files_old_sorted = [] %}
+            {% for project_file_old_prioritized in project_files_old_prioritized|sort(attribute="page.meta.display_priority") %}
+                {{ project_files_old_sorted.append(project_file_old_prioritized) | default("", true) }} 
+            {% endfor %}
+            {% for project_file_old_unprioritized in project_files_old_unprioritized|sort(attribute="page.meta.title") %}
+                {{ project_files_old_sorted.append(project_file_old_unprioritized) | default("", true) }}
+            {% endfor %}
+
+            {% for project_file_loop in project_files_new_sorted %}
+                {% set project_file = project_file_loop %}
+                {% set project_page = project_file.page %}
+
+                {% if project_page.meta %}
+                    <div class="col-md-4 project-post col col-10 justify-content-top">
+                        <a href="{{ project_file.url }}" class="col-12">
+                            <div class="ratio ratio-16x9">
+                                {% if project_page.meta.banner_image %}
+                                    
+                                    <img src="{{ project_page.meta.banner_image }}" alt="a{{ project_page.meta.title }}" class="thumbnail rounded">
+                                {% else %}
+                                    <img src="../assets/images/placeholder.png" alt="{{ project_page.meta.title }}" class="thumbnail rounded">
+                                {% endif %}
+                            </div>
+                            {% if project_page.meta.title %}
+                                <div class="col-10 project-info">
+                                    <span class="project_title_small m-0">{{ project_page.meta.title }}</span>
+                                    {% if project_page.meta.subtitle %}
+                                        <span> – </span>
+                                        <span class="project_subtitle_small m-0">{{ project_page.meta.subtitle }}</span>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        </a>
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+            <h1 class="text-center"> Other Projects </h1>
+            {% for project_file_loop in project_files_old_sorted %}
+                {% set project_file = project_file_loop %}
+                {% set project_page = project_file.page %}
+
+                {% if project_page.meta %}
+                    <div class="col-md-3 project-post col col-10 justify-content-top">
+                        <a href="{{ project_file.url }}" class="col-12">
+                            <div class="ratio ratio-16x9">
+                                {% if project_page.meta.banner_image %}
+                                    <img src="{{ project_page.meta.banner_image }}" alt="a{{ project_page.meta.title }}" class="thumbnail rounded">
+                                {% else %}
+                                    <img src="../assets/images/placeholder.png" alt="{{ project_page.meta.title }}" class="thumbnail rounded">
+                                {% endif %}
+                            </div>
+                            {% if project_page.meta.title %}
+                                <div class="col-10 project-info">
+                                    <span class="project_title_small m-0">{{ project_page.meta.title }}</span>
+                                    {% if project_page.meta.subtitle %}
+                                        <span> – </span>
+                                        <span class="project_subtitle_small m-0">{{ project_page.meta.subtitle }}</span>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        </a>
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+        </div>
+
+    {% endif %}
+{% endblock %}
