@@ -1,0 +1,119 @@
+site_name: Joeys Hoard of Stuff
+site_url: https://joeyehand.com/
+site_description: Joey Einerhands Portfolio and tech blog.
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: white
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+      primary: white
+  logo: assets/images/star-struck_emoji.png
+  icon:
+    repo: fontawesome/brands/github
+  language: en
+  features:
+    - search.suggest
+    - search.share
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - navigation.top
+    - content.tooltips
+    - content.code.copy
+
+
+plugins:
+    - search
+    - privacy
+    - blog:
+        blog_toc: true
+        archive_date_format: MMMM yyyy
+        categories_allowed:
+            - General Technology
+    - tags:
+        tags_file: blog/tags.md
+    - rss:
+        match_path: blog/posts/.*
+        date_from_meta:
+            as_creation: date
+        categories:
+          - categories
+          - tags
+
+
+
+
+nav:
+  - Portfolio: index.md
+
+extra:
+  generator: false
+  social:
+    - icon: linkedin
+      link: https://www.linkedin.com/in/joeyeinerhand/
+
+
+extra_css:
+  - stylesheets/extra.css?v=1.1
+
+hooks:
+  - hooks/socialmedia.py
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - toc:
+      permalink: true
+  - abbr
+  - admonition
+  - pymdownx.details
+  - footnotes
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
