@@ -145,7 +145,7 @@
                         <a href="{{ project_file.url }}" class="col-12">
                             <div class="ratio ratio-16x9">
                                 {% if project_page.meta.banner_image %}
-                                    <img src="{{ project_page.meta.banner_image }}" alt="a{{ project_page.meta.title }}" class="thumbnail rounded">
+                                    <img src="{{ project_page.meta.banner_image }}" alt="{{ project_page.meta.title }}" class="thumbnail rounded">
                                 {% else %}
                                     <img src="../assets/images/placeholder.png" alt="{{ project_page.meta.title }}" class="thumbnail rounded">
                                 {% endif %}

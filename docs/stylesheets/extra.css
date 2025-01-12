@@ -13,8 +13,13 @@ header.md-header{
 }
 
 .md-sidebar {
-    flex-shrink: 1;
+    flex-shrink: 2;
 }
+
+.md-sidebar--post {
+    flex-shrink: 0 !important;
+}
+
 
 .md-tabs {
     background-color: transparent !important;
@@ -177,15 +182,30 @@ img.thumbnail {
 .header-socials .md-social__link {
     border-radius: 60px;
     box-shadow: 0 0 6px #888;
-    padding: 0.5em 0.6em;
+}
+
+.md-footer-meta__inner .md-social .md-social__link{ 
+    padding: 0.2em 0.3em;
 }
 .md-social__link svg{
     margin: auto;
     display: block;
+    height: 100%;
+    max-height: 100%;
 }
 
 /* text outlines for header */
 .md-tabs__item a{
     paint-order: stroke fill;
     -webkit-text-stroke: 2px #3e3e3e
+}
+
+/* This is needed for the steam iframe to have a transparent background.
+    See https://github.com/squidfunk/mkdocs-material/issues/6889 */
+.steam-iframe iframe {
+    color-scheme: light;
+}
+
+.md-post--excerpt {
+    margin-bottom: 1.2rem;
 }

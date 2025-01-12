@@ -3,17 +3,17 @@ title: "Virtual Reality introduction thesis"
 subtitle: "Bachelor Thesis and game on VR introduction specific audiences"
 project_type: "(Unity VR Bachelor Thesis)"
 is_old_project: false
-description: "testinglol"
 page_type: "project_for_frontpage"
 banner_image: "/assets/images/vrthesis/Banner.png"
 display_priority: "2"
+hide:
+  - navigation
+  - toc
 ---
-<h1 class="row justify-content-center"> [Graduation thesis VR game] VR Tutorial level</h1>
-
-<br>
+<h1 class="text-center">[Bachelor Thesis] Virtual Reality introduction tutorial</h1>
 
 <div class="row justify-content-center">
-  <img src="/assets/Images/VRTutorial/Banner.png">
+  <img src="/assets/images/vrthesis/Banner.png">
 </div>
 <br>
 <div class="row justify-content-center">
@@ -25,13 +25,11 @@ display_priority: "2"
     <a href="/assets/pdf/2022JUN15_ExtendedAbstract_JoeyEinerhand_V1.0.pdf" class="btn btn-primary">Thesis (in Dutch)</a>
 </div>
 
-<br>
-
 <p>
   The VR tutorial was a thesis project to teach people with a lack of technical backgrounds how to use Virtual Reality.
 </p>
 <p>
-  Some of my contributions include:
+  Some of the things I did:
 </p>
 <ul>
   <li>Desiging and implementing an XR-framework for the client, based on the cutting edge Unity XR Interaction Toolkit 2.0</li>
@@ -43,7 +41,7 @@ display_priority: "2"
   For the complete picture, see the "Thesis" button at the top of this page.
 </p>
 
-<p>The VR tutorial graduation thesis was completed in 20 weeks for the company BlueTea. The graduation thesis was awarded an 8 out of 10. </p>
+<p>The VR tutorial graduation thesis was completed in 20 weeks for a serious game company.</p>
 
 <p>The following tools and languages were used in this project:</p>
 <ul>

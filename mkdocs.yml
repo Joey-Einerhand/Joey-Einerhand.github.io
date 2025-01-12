@@ -1,5 +1,6 @@
-site_name: Joey's Hoard of Stuff
+site_name: Joeys Hoard of Stuff
 site_url: https://joeyehand.com/
+site_description: Joey Einerhands Portfolio and tech blog.
 theme:
   name: material
   custom_dir: overrides
@@ -56,7 +57,7 @@ plugins:
     - tags:
         tags_file: blog/tags.md
     - rss:
-        match_path: blog/posts/.* 
+        match_path: blog/posts/.*
         date_from_meta:
             as_creation: date
         categories:
@@ -68,15 +69,11 @@ plugins:
 
 nav:
   - Portfolio: index.md
-  - Blog:
-      - blog/index.md
-  - Cool stuff:
-      - partner-websites/community-links.md
 
 extra:
   generator: false
   social:
-    - icon: fontawesome/brands/linkedin
+    - icon: linkedin
       link: https://www.linkedin.com/in/joeyeinerhand/
 
 
@@ -91,20 +88,23 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
   - toc:
       permalink: true
   - abbr
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
   - footnotes
   - tables
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.critic

@@ -3,28 +3,25 @@ title: TF2 Chat Text to Speech
 subtitle: In-game chat to speech converter with commands and filtering
 project_type: "(.NET Console App)"
 is_old_project: false
-description: "testinglol"
 page_type: "project_for_frontpage"
 banner_image: "/assets/images/tf2chattospeech/TF2CTSLogo.png"
 display_priority: "3"
+hide:
+  - navigation
+  - toc
 ---
-<h1 class="row justify-content-center"> [Console Application] TF2 Chat To Speech</h1>
-
-<br>
-<div class="row justify-content-center">
-  <p>You can view TF2 Chat To Speech at the following link:</p>
-</div>
-<div class="row justify-content-around">
-  <a href="https://github.com/Joey-Einerhand/TF2ChatToSpeech" class="btn btn-primary">GitHub link</a>
-</div>
-
-<br>
+<h1 class="text-center">[Console Application] TF2 Chat To Speech</h1>
 
 <div class = "row justify-content-center">
   <img src="/assets/images/tf2chattospeech/UML.png" class="col-lg-10 rounded justify-content-center">
 </div>
 
 <br>
+
+<div class="row justify-content-center">
+  <p>You can view TF2 Chat To Speech on <a href="https://github.com/Joey-Einerhand/TF2ChatToSpeech" class="btn btn-primary">GitHub</a></p>
+</div>
+
 <p>
   TF2 Chat To Speech is a .NET framework application which reads the in-game text chat of a game called Team Fortress 2 and outputs it into the in-game voice chat. TF2CTS supports commands which users can write in-game in order for them to switch the speaker's voice and rate of speech.
 </p>
