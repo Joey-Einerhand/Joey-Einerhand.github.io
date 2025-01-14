@@ -69,12 +69,16 @@ plugins:
 
 nav:
   - Portfolio: index.md
+  - Blog:
+      - blog/index.md
 
 extra:
   generator: false
   social:
     - icon: linkedin
       link: https://www.linkedin.com/in/joeyeinerhand/
+    - icon: rss
+      link: /feed_rss_created.xml
 
 
 extra_css:

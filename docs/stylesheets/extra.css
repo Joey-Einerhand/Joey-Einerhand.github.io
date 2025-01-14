@@ -16,10 +16,6 @@ header.md-header{
     flex-shrink: 2;
 }
 
-.md-sidebar--post {
-    flex-shrink: 0 !important;
-}
-
 
 .md-tabs {
     background-color: transparent !important;
