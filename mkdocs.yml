@@ -1,6 +1,6 @@
-site_name: Joeys Hoard of Stuff
+site_name: Joey's Hoard of Stuff
 site_url: https://joeyehand.com/
-site_description: Joey Einerhands Portfolio and tech blog.
+site_description: Joey Einerhand's Portfolio and tech blog.
 theme:
   name: material
   custom_dir: overrides
