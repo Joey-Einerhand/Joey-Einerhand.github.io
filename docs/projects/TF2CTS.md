@@ -1,11 +1,11 @@
 ---
 title: TF2 Chat Text to Speech
-subtitle: In-game chat to speech converter with commands and filtering
+subtitle: In-game chat to speech converter with commands and filtering <br> .net framework & C#
 project_type: "(.NET Console App)"
 is_old_project: false
 page_type: "project_for_frontpage"
 banner_image: "/assets/images/tf2chattospeech/TF2CTSLogo.png"
-display_priority: "3"
+display_priority: "5"
 hide:
   - navigation
   - toc

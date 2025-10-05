@@ -1,11 +1,11 @@
 ---
 title: "Virtual Reality introduction thesis"
-subtitle: "Bachelor Thesis and game on VR introduction specific audiences"
+subtitle: "Unity & C#"
 project_type: "(Unity VR Bachelor Thesis)"
-is_old_project: false
+is_old_project: true
 page_type: "project_for_frontpage"
 banner_image: "/assets/images/vrthesis/Banner.png"
-display_priority: "2"
+display_priority: "14"
 hide:
   - navigation
   - toc

@@ -1,6 +1,6 @@
 ---
 title: "Samurai Shampoo"
-subtitle: "Roguelike videogame with over 20.000 unique players"
+subtitle: "melee-based roguelike dungeon crawler game <br> 20.000 unique players, 170 reviews <br> Unity & C#"
 project_type: "(Published Game)"
 is_old_project: false
 page_type: "project_for_frontpage"
@@ -10,25 +10,27 @@ hide:
   - navigation
   - toc
 ---
-<h1 class="text-center">[Videogame] Samurai Shampoo</h1>
+<h1 class="text-center">[Game] Samurai Shampoo</h1>
 
 <div class="row justify-content-center">
-  <img src="/assets/images/samuraishampoo/gameplay.gif">
+  <img src="/assets/images/samuraishampoo/gameplay.gif" class="col-lg-12 rounded justify-content-center">
 </div>
 <br>
 
-<div class="steam-iframe d-flex justify-content-center">
-  <iframe src="https://store.steampowered.com/widget/1667770/" frameborder="0" width="646" height="190" allowTransparency="true"></iframe>
-</div>
+![Full Logo](../assets/images/samuraishampoo/banner.jpg){ align=right width=50% }
+![Screenshot 2](../assets/images/samuraishampoo/screenshot1.png){ align=right width=50% }
+![Screenshot 4](../assets/images/samuraishampoo/screenshot3.png){ align=right width=50% }
+![Screenshot 3](../assets/images/samuraishampoo/screenshot2.png){ align=right width=50% }
+![Screenshot 5](../assets/images/samuraishampoo/screenshot4.png){ align=right width=50% }
 
-<br>
+<b>Play for free on  :simple-steam: [Steam!](https://store.steampowered.com/app/1667770)</b>
 
 <p>
   Samurai Shampoo is a melee-based roguelike dungeon crawler videogame where a fallen samurai must retrieve his stolen Shampoo. It was awarded second place overall game in the "Winnovation best-overall game" category.</p>
 
-<p>As of writing, Samurai Shampoo has had over 20.000 unique players, over 170 steam reviews, and approval for Nintendo Switch development.</p>
+Samurai Shampoo has been played by 20.000 unique players, and has 170 reviews on :simple-steam: steam. On top of that, approval was granted by Nintendo for :material-nintendo-switch: Nintendo Switch development.
 
-<p>Samurai Shampoo was originally created by 6 people in 10 weeks. Post-launch it was developed further by 2 people, including me.
+<p>Samurai Shampoo was originally created by 6 people in 10 weeks. Since then, I've released one major update with a teammate, and two major updates solo.
 </p>
 
 <p>
@@ -57,6 +59,6 @@ hide:
 
 <p></p>
 
-<p>Samurai Shampoo was made using C# in Unity.</p>
+Samurai Shampoo was made in :simple-unity: Unity using C#.
 
 

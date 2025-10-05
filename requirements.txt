@@ -3,7 +3,7 @@ CacheControl==0.14.2
 cairocffi==1.7.0
 CairoSVG==2.7.1
 certifi==2024.12.14
-cffi==1.16.0
+cffi==1.17.0
 charset-normalizer==3.4.1
 click==8.1.8
 colorama==0.4.6
@@ -27,7 +27,7 @@ msgpack==1.1.0
 packaging==24.2
 paginate==0.5.7
 pathspec==0.12.1
-pillow==10.3.0
+pillow==11.3.0
 platformdirs==4.3.6
 pycparser==2.22
 Pygments==2.19.1
@@ -44,3 +44,4 @@ tzdata==2024.2
 urllib3==2.3.0
 watchdog==6.0.0
 webencodings==0.5.1
+mkdocs-glightbox==0.5.1

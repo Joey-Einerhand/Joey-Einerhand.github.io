@@ -49,6 +49,7 @@ theme:
 plugins:
     - search
     - privacy
+    - glightbox
     - blog:
         blog_toc: true
         archive_date_format: MMMM yyyy

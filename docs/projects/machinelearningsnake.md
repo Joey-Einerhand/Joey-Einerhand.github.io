@@ -1,11 +1,11 @@
 ---
 title: "Machine Learning Snake"
-subtitle: Unity ML-Agent project
+subtitle: "Unity ML-Agent project"
 project_type: "(Machine Learning)"
 is_old_project: true
 page_type: "project_for_frontpage"
 banner_image: "/assets/images/snakeai/Banner.png"
-display_priority: "1"
+display_priority: "999"
 hide:
   - navigation
   - toc

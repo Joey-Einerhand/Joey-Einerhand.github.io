@@ -1,28 +1,24 @@
 ---
 title: "Discord Multiclient Launcher"
-subtitle: "Easily launch multiple seperate discord clients"
+subtitle: "Easily launch multiple seperate discord clients <br> 10+ Github stars, 1000+ downloads <br> Powershell"
 project_type: "(Powershell Script)"
-is_old_project: yes
+is_old_project: no
 page_type: "project_for_frontpage"
 banner_image: "/assets/images/discordmulticlientlauncher/banner.png"
-display_priority: "998"
+display_priority: "4"
 hide:
   - navigation
   - toc
 ---
 <h1 class="text-center">[Powershell Script] Discord Multiclient Launcher</h1>
 
-<div class="row justify-content-center">
-  <img src="/assets/images/discordmulticlientlauncher/banner.png">
-</div>
+![Full Logo](../assets/images/discordmulticlientlauncher/banner.png){ align=right width=50% }
 <br>
-<div class="row justify-content-center">
-  <p>A Powershell script to lauch multiple discord clients, with the ability to log into each client with a different account.</p>
-</div>
+<b>Code and .exe available on :material-github: [Github.](https://github.com/Joey-Einerhand/discord-multiclient-launcher)</b>
+<br>Currently at 10+ stars and 1.000+ downloads!
 
-<div class="row justify-content-around">
-  <a href="https://github.com/Joey-Einerhand/discord-multiclient-launcher" class="btn btn-primary">Visit the github repo here.</a>
-</div>
+A Powershell script to lauch multiple discord clients, with the ability to log into each client with a different account.</p>
+
 
 I had a problem: I wanted to launch multiple instances of the chat app Discord, each with a different account logged in.  Launching the chat application multiple times automatically logged you into your already logged-in discord account. Logging out of one of the clients logged you out of all.
 There is a solution. Namely, going into Discord's install directory. 
@@ -33,7 +29,7 @@ New problem: As you can see, the URL to the discord.exe example above includes t
 
 This project is a powershell script which automatically determines the highest discord version installed (There can be multiple installed at one time) and starts the appropriate .exe with the `--multi-instance` flag, so the user never has to manually follow the above process again; The user only has to download the .exe version of the script and execute it.
 
-This project was written in Powershell.
+This project was written in Powershell and is build to an .exe with Github Actions.
 
 <br>
 
