@@ -1,32 +1,34 @@
 ---
 title: "Blow Up The Sun"
-subtitle: "24-hour solo gamejam game"
+subtitle: "Base-builder space colonization game <br> 48-hour solo gamejam <br> Godot & GDScript"
 project_type: "(Gamejam)"
 is_old_project: false
 page_type: "project_for_frontpage"
 banner_image: "/assets/images/blowupthesun/banner.png"
-display_priority: "2"
+display_priority: "3"
 hide:
   - navigation
   - toc
 ---
 <h1 class="text-center">[Gamejam] Blow Up The Sun</h1>
 
-<div class="row justify-content-center">
-  <img src="/assets/images/blowupthesun/screenshot.png">
+<div class = "row justify-content-center">
+  <img src="/assets/images/blowupthesun/gameplay.gif" class="col-lg-12 rounded justify-content-center">
 </div>
 
-<br>
+![Full Logo](../assets/images/blowupthesun/banner.png){ align=right width=50% }
+![Screenshot 2](../assets/images/blowupthesun/screenshot1.png){ align=right width=50% }
+![Screenshot 3](../assets/images/blowupthesun/screenshot2.png){ align=right width=50% }
+![Screenshot 4](../assets/images/blowupthesun/screenshot3.png){ align=right width=50% }
 
-<div class="d-flex justify-content-center">
-  <iframe frameborder="0" src="https://itch.io/embed/2842130?bg_color=202125&amp;fg_color=e8e8e8&amp;link_color=678fff&amp;border_color=949494" width="552" height="167"><a href="https://joeyehand.itch.io/blow-up-the-sun">Blow up the sun!! by Jojo</a></iframe>
-</div>
+<b>Play for free on  :fontawesome-brands-itch-io: [itch.io!](https://joeyehand.itch.io/blow-up-the-sun)</b>
 
 <p>In Blow Up The Sun, the player has to colonize the planets in their solar system to harvest resources, so they can research more technologies and eventually Blow Up The Sun.</p>
 
-<p>Blow Up The Sun is a game made in 48 hours <a src="https://itch.io/jam/kenney-jam-2024">Kenney Jam 24</a>, developed by 1 person.
-The Jam limited participants to only use asset packs created by Kenney, the gamejam host.</p>
-<p>I developed BUTS as a proof-of-concept for a potential full game.</p>
+Blow Up The Sun was developed for the solo-developer Kenney Jam 2024, within 48 hours. My aim was to create a tech demo for the concept.
+
+Made in :simple-godotengine: Godot using GDScript.
+
 <br>
 
 
