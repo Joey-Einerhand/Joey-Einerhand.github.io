@@ -19,7 +19,7 @@ hide:
   <p>The Habbo Archive is a fansite which functions as a public archive of Habbo Hotel memorabilia I've personally collected and digitalized, like posters and ads.</p>
 </div>
 
-[Visit the archive here.](https://habboarchive.com/)
+[Visit the archive here.](https://joeyehand.com/habbo-archive-fansite/)
 
 You can view the site's source code on :material-github: [Github](https://github.com/Joey-Einerhand/habbo-archive-fansite)
 
