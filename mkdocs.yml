@@ -69,7 +69,7 @@ plugins:
 
 
 nav:
-  - Portfolio: index.md
+  # - Portfolio: index.md
   - Blog:
       - blog/index.md
 
