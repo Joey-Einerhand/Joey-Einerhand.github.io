@@ -41,13 +41,12 @@
                 walled off in a seperate section at the bottom of the page.
                 New/old set in fontmatter
             #}
-
             {% set project_files_new_prioritized = [] %}
             {% set project_files_new_unprioritized = [] %}
             {% set project_files_old_prioritized = [] %}
             {% set project_files_old_unprioritized = [] %}
 
-            {% for loop_file in pages %}
+            <!-- {% for loop_file in pages %}
                 {% if loop_file.url.startswith('projects/') %}
                 
                     {# 
@@ -162,8 +161,7 @@
                         </a>
                     </div>
                 {% endif %}
-            {% endfor %}
-
+            {% endfor %} -->
         </div>
 
     {% endif %}
