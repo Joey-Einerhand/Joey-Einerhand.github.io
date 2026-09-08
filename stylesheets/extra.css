@@ -1,0 +1,207 @@
+@import "../assets/addons/bootstrap-5.3.3-dist/css/bootstrap-grid.css";
+@import "../assets/addons/bootstrap-5.3.3-dist/css/bootstrap-utilities.css";
+
+/* Header stuff */
+
+header.md-header{
+    background-image: url('../assets/images/header_background.png');
+    z-index: 6;
+}
+
+.md-grid {
+    max-width: 45rem;
+}
+
+.md-sidebar {
+    flex-shrink: 2;
+}
+
+
+.md-tabs {
+    background-color: transparent !important;
+}
+
+.md-tabs__item--active{
+    border-bottom: 2px solid;
+}
+
+.md-search__input {
+    background: #0000004d !important;
+}
+
+.md-search__input::placeholder {
+    color: white !important;
+}
+
+.md-icon svg {
+    fill: white;
+}
+
+.md-footer-meta {
+    background-color: var(--md-footer-bg-color);
+}
+
+a.md-tabs__link {
+    opacity: .6;
+}
+
+[data-md-color-scheme="slate"] {
+
+    --md-default-bg-color: #13101d;
+    --md-default-bg-color--light: #13101d;
+    --md-footer-bg-color: #181524;
+    /* H1, etc. Important text */
+    --md-default-fg-color--light: rgb(235, 235, 235);
+    /* Footer color for socials and text */
+    --md-footer-fg-color--light: rgb(235, 235, 235);
+    /* Text colors */
+    --md-primary-bg-color: #ECECEC;
+    --md-default-fg-color--light: #ECECEC;
+
+    /* Primary color shades */
+    --md-primary-fg-color:               #b986ec !important;
+    --md-primary-fg-color--light:        #f361fb !important;
+    --md-primary-fg-color--dark:         #1a1463 !important;
+    --md-primary-bg-color:               hsla(0, 0%, 100%, 1) !important;
+    --md-primary-bg-color--light:        hsla(0, 0%, 100%, 0.7) !important;
+
+    --md-typeset-a-color:                #b986ec !important;
+  
+    /* Accent color shades */
+    --md-accent-fg-color:                hsla(0, 0%, 100%, 1);
+    --md-accent-fg-color--transparent:   hsla(0, 0%, 100%, 1);
+    --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
+    --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
+}
+
+[data-md-color-scheme="default"] {
+
+    --md-default-bg-color: #f7f8f9;
+    --md-default-bg-color--light: #F7F8F9;
+    --md-footer-bg-color: #DCDFE4;
+    /* H1, etc. Important text */
+    --md-default-fg-color--light: rgb(235, 235, 235);
+    /* Footer color for socials and text */
+    --md-footer-fg-color--light: rgb(25, 23, 23);
+    /* Text colors */
+    --md-primary-bg-color: #13101d;
+    --md-default-fg-color--light: #13101d;
+
+    /* Primary color shades */
+    --md-primary-fg-color:               #b986ec !important;
+    --md-primary-fg-color--light:        #f361fb !important;
+    --md-primary-fg-color--dark:         #1a1463 !important;
+    --md-primary-bg-color:               hsla(0, 0%, 100%, 1) !important;
+    --md-primary-bg-color--light:        hsla(0, 0%, 100%, 0.7) !important;
+
+    --md-typeset-a-color:                rgb(95, 0, 189) !important;
+  
+    /* Accent color shades */
+    --md-accent-fg-color:                hsla(0, 0%, 100%, 1);
+    --md-accent-fg-color--transparent:   hsla(0, 0%, 100%, 1);
+    --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
+    --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
+}
+
+/* Project content grid */
+.thumbnail {
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    border-radius: .5rem;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+img.thumbnail {
+    width: 100%;
+    height: 100%;
+}
+
+.project-post {
+    margin-bottom: 3rem;
+}
+
+.project-post h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: 'Roboto', serif;
+    font-size: 1.25rem;
+}
+
+.project-post a {
+    text-decoration:  none;
+    color: var(---bs-primary);
+}
+
+.category-list {
+    margin-bottom: 4rem;
+    .btn {
+        margin: 0.3em 0.2em;
+    }
+}
+
+.project-info span{
+    display:inline;
+    position:relative;
+    top:10px;
+    font-size: 0.7rem;
+}
+
+.project_title_small {
+    font-weight: 500;
+}
+
+.project_subtitle_small {
+    font-weight: 400;
+    opacity: 0.55;
+}
+
+
+.header-socials {
+    margin-left: auto; 
+    margin-right: 0.3rem;
+    display: flex;
+}
+
+.header-socials .md-tooltip {
+    width: 0;
+}
+
+.md-social {
+    padding: 0;
+    margin: auto;
+}
+
+.md-social__link {
+    display: inline-flex;
+}
+.header-socials .md-social__link {
+    border-radius: 60px;
+    box-shadow: 0 0 6px #888;
+}
+
+.md-footer-meta__inner .md-social .md-social__link{ 
+    padding: 0.2em 0.3em;
+}
+.md-social__link svg{
+    margin: auto;
+    display: block;
+    height: 100%;
+    max-height: 100%;
+}
+
+/* text outlines for header */
+.md-tabs__item a{
+    paint-order: stroke fill;
+    -webkit-text-stroke: 2px #3e3e3e
+}
+
+/* This is needed for the steam iframe to have a transparent background.
+    See https://github.com/squidfunk/mkdocs-material/issues/6889 */
+.steam-iframe iframe {
+    color-scheme: light;
+}
+
+.md-post--excerpt {
+    margin-bottom: 1.2rem;
+}
